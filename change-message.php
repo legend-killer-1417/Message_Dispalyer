@@ -11,7 +11,7 @@ if (!isset($_SESSION['admin_logged_in']) || !$_SESSION['admin_logged_in']) {
 // Handle form submission to update the message content or redirect
 if (isset($_POST['go_to_main_page'])) {
     // Redirect to the main page
-    header('Location: main.php');
+    header('Location: index.php');
     exit();
 }
 elseif ($_SERVER['REQUEST_METHOD'] === 'POST') {
